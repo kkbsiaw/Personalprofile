@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francis K. Amponsah-Siaw | MSC Information Technology</title>
+<meta name="description" content="Personal portfolio of KKB, an MSc IT student and software developer building Java, AI and full-stack systems in Ghana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo" aria-label="KKB home">
+      <span class="logo-mark">KKB</span>
+      <span class="logo-name">Francis K. Amponsah-Siaw</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9789;</span>
+        <span class="theme-icon theme-icon-light" aria-hidden="true">&#9728;</span>
+      </button>
+
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+    <ul>
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <p class="eyebrow">Software Developer · AI Systems Builder</p>
+      <h1 id="hero-heading">
+        Building useful systems with clarity, discipline, and <span class="text-gradient">craft</span>.
+      </h1>
+      <p class="hero-role">
+        <span class="role-text" id="role-text">Software Developer</span>
+      </p>
+      <p class="hero-lede">
+        I'm Francis K. Amponsah-Siaw — an MSc Information Technology student at the University of Cape Coast,
+        building Java applications, AI-driven fraud detection systems, and full-stack tools,
+        with an eye trained by photography for detail and composition.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
+      <figure class="hero-figure">
+        <img src="assets/classy-workspace.png" alt="Editorial workspace with a laptop, camera and notebook">
+        <figcaption>Software, AI systems, and visual composition.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="section-divider" role="presentation" aria-hidden="true"></div>
+
+  <section id="about" class="about" aria-labelledby="about-heading">
+    <div class="section-inner">
+      <p class="eyebrow">About</p>
+      <h2 id="about-heading">About me</h2>
+
+      <div class="about-grid">
+        <div class="about-photo-frame">
+          <div class="photo-placeholder">
+            <img class="photo-img" src="assets/img.png" alt="Francis K. Amponsah-Siaw">
+          </div>
+          <p class="photo-caption">Winneba · Central Region · Ghana</p>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I'm Francis K. Amponsah-Siaw — a first-year MSc Information Technology student at the University of Cape Coast's
+            College of Distance Education, building on earlier coursework in database systems and
+            systems administration. My work sits at the intersection of practical software
+            engineering and applied AI — with a particular interest in solving problems relevant
+            to Ghana's digital economy, from mobile money to small-business point-of-sale tools.
+          </p>
+          <p>
+            Recent work includes a layered, JavaFX-based Point of Sale system built around
+            Ghana-specific needs like MoMo payment integration and VAT calculation, and two
+            AI-powered fraud detection systems — a browser-based email phishing detector and a
+            Mobile Money fraud detection platform combining a Python/FastAPI backend, a React
+            frontend, and an ensemble machine learning model.
+          </p>
+          <p>
+            Outside of code, I spend time behind a camera, and I'm involved with scholarship
+            administration work for a local foundation. I drive a well-loved 2012 Hyundai Accent
+            and I'm active with Grace Presbyterian Church in Winneba.
+          </p>
+
+          <h3 class="skills-heading">Skills &amp; tools</h3>
+          <ul class="skills-list">
+            <li>Java &amp; JavaFX</li>
+            <li>Python &amp; FastAPI</li>
+            <li>React</li>
+            <li>SQL &amp; database design</li>
+            <li>Machine learning (fraud detection)</li>
+            <li>HTML, CSS &amp; JavaScript</li>
+            <li>Systems administration</li>
+            <li>Photography &amp; visual composition</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" role="presentation" aria-hidden="true"></div>
+
+  <section id="projects" class="projects" aria-labelledby="projects-heading">
+    <div class="section-inner">
+      <p class="eyebrow">Selected Work</p>
+      <h2 id="projects-heading">Selected projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <h3>Ghana POS System</h3>
+            <span class="status-tag">Complete</span>
+          </div>
+          <p class="project-desc">
+            A fully functional JavaFX-based Point of Sale system built with a layered MVU
+            architecture, designed around Ghana-specific retail needs including MoMo payment
+            capture and automatic VAT calculation.
+          </p>
+          <ul class="tech-tags">
+            <li>Java</li>
+            <li>JavaFX</li>
+            <li>MVU architecture</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <h3>MoMo Fraud Detection Platform</h3>
+            <span class="status-tag">Complete</span>
+          </div>
+          <p class="project-desc">
+            A comprehensive fraud detection system for Ghana's Mobile Money ecosystem, pairing a
+            Python/FastAPI backend and a React frontend with an ensemble machine learning model
+            trained to flag suspicious transaction patterns.
+          </p>
+          <ul class="tech-tags">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>React</li>
+            <li>Machine learning</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <h3>Email Phishing Detector</h3>
+            <span class="status-tag">Complete</span>
+          </div>
+          <p class="project-desc">
+            A browser-based tool that analyses incoming emails for phishing indicators in
+            real time, built as part of an applied AI coursework project on fraud and threat
+            detection.
+          </p>
+          <ul class="tech-tags">
+            <li>JavaScript</li>
+            <li>Heuristic &amp; ML detection</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <h3>Campus Lab &amp; Thin Client Setup</h3>
+            <span class="status-tag">Deployed</span>
+          </div>
+          <p class="project-desc">
+            Configured a computer lab environment around a Windows Server 2019 machine and 30
+            Dell Wyse 7010 thin clients, including Remote Desktop Services and roaming profiles
+            for a shared, centrally-managed workstation experience.
+          </p>
+          <ul class="tech-tags">
+            <li>Windows Server</li>
+            <li>RDS</li>
+            <li>Systems administration</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" role="presentation" aria-hidden="true"></div>
+
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-heading">Get in touch</h2>
+      <p class="contact-lede">
+        Have a project, a question, or an opportunity in mind? Fill in the form below and
+        I'll get back to you.
+      </p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Ama Boateng" autocomplete="name" required>
+          <p class="field-error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+          <p class="field-error" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+          <p class="field-error" id="subject-error" role="alert"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+          <p class="field-error" id="message-error" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> KKB. Built with HTML, CSS and JavaScript.</p>
+    <p class="footer-location">Winneba, Central Region, Ghana</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
