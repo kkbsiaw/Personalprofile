@@ -28,7 +28,7 @@ document.querySelectorAll('.mobile-nav-link').forEach(link => {
 });
 
 /* ---------------------------------------------------------------
-   Theme toggle (dark default, light optional) with persistence
+   Theme toggle (automatic by local time)
    --------------------------------------------------------------- */
 const themeToggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
@@ -45,18 +45,21 @@ function applyTheme(theme) {
   }
 }
 
-const savedTheme = localStorage.getItem('portfolio-theme');
-if (savedTheme) {
-  applyTheme(savedTheme);
-} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-  applyTheme('light');
+function getTimeBasedTheme(date = new Date()) {
+  const hour = date.getHours();
+  return hour >= 6 && hour < 18 ? 'light' : 'dark';
 }
+
+applyTheme(getTimeBasedTheme());
+
+setInterval(() => {
+  applyTheme(getTimeBasedTheme());
+}, 60000);
 
 themeToggle.addEventListener('click', () => {
   const isLight = root.getAttribute('data-theme') === 'light';
   const next = isLight ? 'dark' : 'light';
   applyTheme(next);
-  localStorage.setItem('portfolio-theme', next);
 });
 
 /* ---------------------------------------------------------------
@@ -109,7 +112,7 @@ sections.forEach(section => observer.observe(section));
    --------------------------------------------------------------- */
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const revealTargets = document.querySelectorAll(
-    '.about-photo-frame, .about-copy, .project-card, .contact-form'
+    '.about-photo-frame, .about-copy, .project-card, .contact-card, .contact-info-item'
   );
 
   revealTargets.forEach((el, index) => {
